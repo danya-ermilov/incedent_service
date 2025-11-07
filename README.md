@@ -25,7 +25,7 @@
 ---
 
 ## Структура проекта
-
+```bash
 app/
 ├── api/
 │ └── routes.py # Эндпоинты API
@@ -45,7 +45,7 @@ migrations/
 └── versions/ # Alembic-миграции
 .env # Переменные окружения
 requirements.txt # Зависимости
-
+```
 
 ---
 

@@ -123,3 +123,8 @@ PATCH /incidents/{incident_id}
   "status": "resolved"
 }
 ```
+
+## Зайти в бд
+```bash
+psql -h 127.0.0.1 -U incidents_user -d incidents_db
+```

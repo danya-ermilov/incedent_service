@@ -8,7 +8,7 @@
 ## Возможности
 
 - Создание инцидента  
-- Получение списка инцидентов (с фильтрацией по статусу и источнику)  
+- Получение списка инцидентов (с фильтрацией по статусу)  
 - Обновление статуса инцидента  
 - Полная OpenAPI-документация через Swagger UI
 
@@ -31,15 +31,11 @@ app/
 │ └── routes.py # Эндпоинты API
 ├── core/
 │ └── config.py # Настройки (ENV)
-├── crud/
-│ └── init.py # CRUD-логика (операции с БД)
+├── crud.py # CRUD-логика (операции с БД)
 ├── db/
-│ ├── session.py # Асинхронная сессия SQLAlchemy
-│ └── base.py # Подключение Base моделей
-├── models/
-│ └── incident.py # Модель Incident
-├── schemas/
-│ └── incident.py # Pydantic-схемы
+│ └── session.py # Асинхронная сессия SQLAlchemy
+├── models.py # Модель Incident
+├── schemas.py # Pydantic-схемы
 └── main.py # Точка входа FastAPI
 migrations/
 └── versions/ # Alembic-миграции

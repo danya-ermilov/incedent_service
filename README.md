@@ -97,7 +97,8 @@ Swagger UI: http://127.0.0.1:8000/docs
 POST /incidents
 ```json
 {
-  "description": "Самокат не в сети",
+  "description": "самокат не в сети",
+  "status": "new",
   "source": "operator"
 }
 ```
